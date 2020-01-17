@@ -1,0 +1,10 @@
+<div id='con'>this is con</div>
+<script>
+var con = document.getElementById('con');
+con.onclick = function () {
+      Promise.resolve().then(function Promise1 () {
+           con.innerHTML = 1;
+           console.log('click')
+      })
+};
+</script>
