@@ -14,12 +14,28 @@
  */
 var merge = function(nums1, m, nums2, n) {
   let arr1 = nums1.slice(0, m)
-  for(let i=0, j=0; i< m,j<n;){
-    if(nums2[j]< arr1[i]) {
-      nums1[i + j] = nums2[j]           
+  let p=0, q=0
+
+  while((p<m) && (q<n)) {
+
+    if(arr1[p] <= nums2[q]) {
+      nums1[p + q] = arr1[p]
+        p++
+    } else {
+      nums1[p + q] = nums2[q]
+        q++
     }
   }
+  while((p<m)) {
+    nums1[p + q] = arr1[p]
+    p++
+  }
+  
 };
 
-var nums1 = [1,2,3,0,0,0]
-var nums2 = [2,5,6]
+var nums1 = [2,0]
+var m = 1
+var n = 1
+var nums2 = [1]
+merge(nums1, m, nums2, n)
+console.log(nums1)

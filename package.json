@@ -1,0 +1,32 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/athena0304/leetcode-study.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/athena0304/leetcode-study/issues"
+  },
+  "homepage": "https://github.com/athena0304/leetcode-study#readme",
+  "devDependencies": {
+    "jest": "^25.1.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.8.4",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^25.1.0",
+    "babel-preset-env": "^1.7.0",
+    "regenerator-runtime": "^0.13.3"
+  }
+}
